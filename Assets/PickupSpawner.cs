@@ -10,7 +10,7 @@ public class PickupSpawner : MonoBehaviour
     void Start()
     {
         // spawn pickups every 2 seconds
-        InvokeRepeating("SpawnPickup", 2.0f, 2.0f);
+        InvokeRepeating("SpawnPickup", 0.1f, 0.1f);
     }
 
     void SpawnPickup()
