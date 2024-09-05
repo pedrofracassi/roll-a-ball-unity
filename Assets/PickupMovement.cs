@@ -20,8 +20,6 @@ public class PickupMovement : MonoBehaviour
     {
         transform.Rotate(new Vector3(15, 30, 45) * Time.deltaTime * 3.0f);
 
-
-
         // move up and down in a sine wave
         transform.position = new Vector3(transform.position.x, Mathf.Sin(Time.time * speed) * 0.2f + 0.7f, transform.position.z);
     }

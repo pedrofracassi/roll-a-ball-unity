@@ -6,7 +6,7 @@ public class NewBehaviourScript : MonoBehaviour
     public float speed;
     public Rigidbody rb;
 
-    float maxSpeed = 10.0f;
+    float maxSpeed = 15.0f;
 
     // Start is called before the first frame update
     void Start()
@@ -55,7 +55,8 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Pickup"))
         {
-            other.gameObject.SetActive(false);
+            // destroy
+            Destroy(other.gameObject);
         }
     }
 }
